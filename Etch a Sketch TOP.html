@@ -6,31 +6,51 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Picross</h1>
+<h1>Etch a Sketch</h1>
+
+<!-- The instructions/modal box -->
+
+
+<div id='instButton'>
+    <button id="inst">Instructions</button>
+</div>
+<!-- Everything outside of the container for etch-sketch-->
 <div class = "base">
-
-
+<!-- The Size configuration-->
     <div>
-
-
         <h3>Choose Size</h3>
-        <input type="number" class="gridRow" id="input"  value="">
-        <input type="number" class="gridCol" id="input"  value="">
+        <label for='value1'></label><input id = 'value1' type = 'number' value = '16'>
+        <input id = "value2" type = "number" value = "16">
         <div>
             <button class="button" id="resize">Resize</button>
         </div>
     </div>
+<!-- The color configuration -->
     <div class="colors">
         <h3>Pick Yer Poison</h3>
-        <button id="black">Black</button>
-        <button id="random">RGB</button>
-        <button id="gray">Gray</button>
+        <button id="black_button">Black</button>
+        <button id="rainbow_button">RGB</button>
+        <button id="vaporwave_button">AESTHETIC</button>
         <div>
             <button id="clear">Clear</button>
         </div>
     </div>
+
 </div>
-<div id="container"></div>
+<div id="myModal" class="modal">
+<div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 style="color:#66a1d2" >The game works as follows</h2>
+    <p style ="color: #dcd5d5  "> Choose your preferred grid size on the top left, it can be anything you want so go crazy</p>
+    <p style ="color: #dcd5d5  "> Choose your preferred color on the top right. Available options are <span style = "color:black">Black</span>, <span id="rainbow_text">Rainbow</span> and <span id="vaporwave_text">Vaporwave</span> presets.</p>
+    <p style = "color: #dcd5d5"> Hover your mouse over the grid and make whatever design your heart desires. Have fun!</p>
+</div>
+
+</div>
+<!-- Grid container -->
+<div id="container">
+
+</div>
 </body>
 <script src = 'javascript.js'></script>
 

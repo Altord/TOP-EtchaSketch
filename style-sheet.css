@@ -1,7 +1,5 @@
 
 
-
-
 html{
     background-color: #2c0452 ;
 }
@@ -9,6 +7,7 @@ html{
 h1{
     text-align:center;
     color: #66a1d2 ;
+    font-size: 50px;
 }
 
 h3 {
@@ -23,7 +22,92 @@ h3 {
 }
 
 
+/* Modal Content/Box */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    background-color: #455f65;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid pink;
+    border-radius: 5px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+    justify-content: center;
+}
 
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#rainbow_text{
+    background: repeating-linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: button_animation 3s infinite;
+    background-size: 400% 100%;
+}
+#vaporwave_text{
+    background: repeating-linear-gradient(to right, #CF00F6, #0700FA, #7C0076, #b967ff, #060031, #b967ff, #7C0076, #0700FA, #CF00F6);
+    border: none;
+    animation: button_animation 3s infinite;
+    background-size: 400% 200%;
+    font-size: 14px;
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+@keyframes button_animation {
+    0%, 100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+
+/* */
+
+
+
+
+#inst{
+    width: 120px;
+    background-color: #8795E8;
+    border: purple;
+    color: #b252a1 ;
+
+}
+#instButton{
+   display: flex;
+    justify-content: center;
+
+}
 
 
 input {
@@ -45,8 +129,6 @@ button {
 }
 
 
-
-
 .colors {
     margin-left: 20%;
 }
@@ -64,7 +146,7 @@ button {
     background-color: #a06404;
 }
 
-#black {
+#black_button {
     background-color: #141414;
     border: none;
     font-size: 14px;
@@ -80,18 +162,66 @@ button {
     margin-top: 10px;
 }
 
-#random {
-    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
-    border: none;
+#rainbow_button{
+    background: repeating-linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    animation: button_animation 5s infinite;
+    background-size: 400% 100%;
     font-size: 14px;
-    color: red;
+    color: white;
+    border: black;
+}
+#vaporwave_button {
+    background: repeating-linear-gradient(to right, #CF00F6, #0700FA, #7C0076, #18007D, #060031, #18007D, #7C0076, #0700FA, #CF00F6);    border: none;
+    animation: button_animation 5s infinite;
+    background-size: 400% 200%;
+    font-size: 14px;
+    color: white;
+    border: black;
+    width: 90px;
 }
 
 
-#gray {
-    background-color: #dcd5d5 ;
-    border: none;
-    font-size: 14px;
-    color: rgb(22, 22, 22);
+
+/**/
+:root{
+    --row-size: 1;
+    --column-size: 1;
 }
 
+#game {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    margin-left: 20px;
+}
+
+
+
+#container {
+    border: 3px solid #66a1d2;
+    display: grid;
+    margin: auto;
+    margin-top: 40px;
+    height: 500px;
+    width: 500px;
+    grid-template-rows: repeat(var(--row-size), 1fr); /*creates the rows sized --row-size*/
+    grid-template-columns: repeat(var(--column-size), 1fr); /*creates the column sized --column-size*/
+}
+
+.content {
+    background-color: blue;
+}
+
+.vpCell{
+    background-image: repeating-linear-gradient(to right, #CF00F6, #0700FA, #7C0076, #b967ff, #060031, #b967ff, #7C0076, #0700FA, #CF00F6);
+    animation: button_animation 5s infinite;
+    background-size: 400% 200%;
+}
+.rainbowCell{
+    background-image: repeating-linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    animation: button_animation 5s infinite;
+    background-size: 400% 200%;
+}
+
+.blackCell{
+    background-color: black;
+}

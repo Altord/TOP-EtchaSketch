@@ -48,7 +48,12 @@
       <option name="presentableId" value="Default" />
       <updated>1588800421283</updated>
       <workItem from="1588800422726" duration="5126000" />
-      <workItem from="1588883656986" duration="13832000" />
+      <workItem from="1588883656986" duration="14047000" />
+      <workItem from="1589061010141" duration="8818000" />
+      <workItem from="1589121316776" duration="7146000" />
+      <workItem from="1589211225648" duration="3906000" />
+      <workItem from="1589292361910" duration="25985000" />
+      <workItem from="1589382060127" duration="3282000" />
     </task>
     <servers />
   </component>
@@ -56,9 +61,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2412" y="526" key="run.anything.popup" timestamp="1588893577258">
+    <state x="2412" y="526" key="run.anything.popup" timestamp="1589387449412">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
-    <state x="2412" y="526" key="run.anything.popup/-2560.0.2560.1440/0.0.3840.2160@0.0.3840.2160" timestamp="1588893577258" />
+    <state x="2412" y="526" key="run.anything.popup/-2560.0.2560.1440/0.0.3840.2160@0.0.3840.2160" timestamp="1589387449412" />
+    <state x="2468" y="516" width="672" height="678" key="search.everywhere.popup" timestamp="1589334502190">
+      <screen x="0" y="0" width="3840" height="2160" />
+    </state>
+    <state x="2468" y="516" width="672" height="678" key="search.everywhere.popup/-2560.0.2560.1440/0.0.3840.2160@0.0.3840.2160" timestamp="1589334502190" />
   </component>
 </project>
